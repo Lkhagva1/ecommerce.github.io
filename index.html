@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shop</title>
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- using fontaweesome icon -->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<!--    stylesheet -->
+<link rel="stylesheet"  href="style/style.css">
+<!-- fav icon -->
+<link rel="shortcut icon" href="zurag/icons8-internet-64.png"> 
+<!-- fontawesome cdn -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+    
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url('/w3images/parallax1.jpg');
+      min-height: 100%;
+    }
+    
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("/w3images/parallax2.jpg");
+      min-height: 400px;
+    }
+    
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("/w3images/parallax3.jpg");
+      min-height: 400px;
+    }
+    
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+    
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+    </style>
+<body>
+    <!-- navigation -->
+    <nav>
+        <!-- social-link and number -->
+        <div class="social-call">
+            <!-- social-links -->
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- phone-number -->
+            <div class="phone">
+                <span>Call number +976 94741310</span>
+            </div>
+        </div>
+        <!-- menu bar -->
+        <div class="navigation">
+            <!-- logo -->
+            <a href="#" class="logo">
+                <p>One Shop</p>
+                <!-- <img src="zurag/fff7e801d3174a079d52809d991a2cd9.png" > -->
+            </a>
+            <div  id="myNavbar">
+                <a href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                </a>
+            <!-- menu -->
+            <ul class="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="men.html">Sale</span>
+                </li>
+                <li><a href="#Women">Women</a></li>
+                <li><a href="#Kids">kids</a></li>
+                <li><a href="#Shops">Shop</a></li>
+            </ul>
+        </div>
+            <!-- right-menu -->
+            <div class="right-menu">
+                <!-- search -->
+                <a href="#" class="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!-- user -->
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                </a>
+                <!-- cart-icon -->
+                <a href="#">
+                    <i class="fas fa-shopping-cart">
+                    <!-- number-of-product-in-cart -->
+                        
+                </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- search-bar -->
+    <div class="search-bar">
+        <div class="search-input">
+            <input type="text" placeholder="search for product">
+            <a href="#" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <!-- login and sign uo from -->
+    <div class="form">
+        <!-- login -->
+        <div class="login-form">
+            <!-- cancel-btn -->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <!-- heading -->
+            <strong>Log in</strong>
+            <!-- inputs -->
+            <form >
+                <input type="email" placeholder="example@gmail.com" name="email" required>
+                <input type="password" placeholder="password" name="password" required>
+            <!-- sybmit btn -->
+            <input type="submit" value=" Log in">
+            </form>
+            <!-- forget and sign up btn -->
+            <div class="form-btns">
+            <a href="#" class="forget ">Forget your password</a>
+            <a href="#" class="sign-up-btn">Create account</a>
+        </div>
+        </div>
+        <!-- sign-up -->
+        <div class="sign-up-form">
+            <!-- cancel-btn -->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <!-- heading -->
+            <strong>Sign up</strong>
+            <!-- inputs -->
+            <form >
+                <input type="text" placeholder="Full name" name="fullname" required>
+                <input type="email" placeholder="example@gmail.com" name="email" required>
+                <input type="password" placeholder="password" name="password" required>
+            <!-- sybmit btn -->
+            <input type="submit" value=" sign up">
+            </form>
+            <!-- forget and sign up btn -->
+            <div class="form-btns">
+            <a href="#" class="Already-account">Already have account?</a>
+        </div>
+        </div>
+    </div>
+<!-- full-slider -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./zurag/jack-web1.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5 >Шинэ бараа ирлээ</h5>
+        <p>orchin uyiin zaluusin shine baraa irlee.</p>
+        </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+        <img src="./zurag/nuur xzurag.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+        <h5 style="color: bisque;">  Шинэ бараа ирлээ</h5>
+        <p style="color:bisque">orchin uyiin zaluusin shine baraa irlee.</p>
+        </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+        <img src="./zurag/jack-web1.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: aquamarine;">Шинэ бараа ирлээ</h5>
+        <p style="color: aquamarine;">orchin uyiin zaluusin shine baraa irlee.</p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-title">
+                    <h4>New Product</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row property_gallery">
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/2.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/2.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/2.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/2.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/6.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/5.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/4.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/3.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/1.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/1.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/1.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-4">
+                <div class="product_item">
+                    <div class="product_item_pic">
+                        <img src="/zurag/1.jpg" alt="">
+                        <div class="label new">New</div>
+                        <ul class="product_hover">
+                            <li><a href="#"><i class="fas fa-arrows-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_item-text">
+                        <h6><a href="#">Blazer Tweed Button</a></h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product_price">$ 59.0</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<main>
+    <div class="text-h1">
+        <h1 style="text-align: center; color: #544;">Хямдрал заралсан бараанууд</h1>
+        <p>📢 SURPRIZE 📢
+            SOREL брэндийн доорх загваруудыг 50%-н хямдартай үнээр зөвхөн Хан-Уул дүүргийн Аянчин Мегастор салбар дээрээс худалдан аваарай. 
+            Жич: Хямдарсан бараанууд размер болон сонголтын хувьд хязгаарлагдмал тул чат болон утсаар хариу өгөх боломжгүй болохыг ойлгоно уу. Мөн хямдарсан барааг солих болон буцаалт хийх боломжгүй тул та сонголтоо зөв хийнэ үү. 
+                </p>
+    </div>
+<!-- w3 -->
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY WORK</h3>
+    <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+        <img src="/zurag/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="/zurag/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="/zurag/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="/zurag/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="/zurag/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="/zurag/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+     </div>
+
+      <div class="w3-col m3">
+        <img src="/zurag/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="/zurag/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      </div>
+      <button class="w3-button w3-padding-large w3-g" style="margin-top:64px">LOAD MORE</button>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+  <!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">Манай Байршил</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+  
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="/zurag/map.png" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mongolia,Ulaanbaatar<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        </div>
+        <p> Та манайд санал гомдол илгээнэ үү<i class="fa fa-coffee"></i>, эсүүл талархлаа илгээнэ үү:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Power in  <a href="http://127.0.0.1:5500/index.html#home" title="W3.CSS" target="_blank" class="w3-hover-text-green">online</a></p>
+  </footer> 
+
+
+    <!-- jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- script -->
+    <script type="text/javascript">
+        // for search bar
+        $(document).on('click','.search',function(){
+            $('.search-bar').addClass('search-bar-active')
+        });
+        $(document).on('click','.search-cancel',function(){
+            $('.search-bar').removeClass('search-bar-active')
+        });
+        // login sign-up-form
+        $(document).on('click','.user,.Already-account',function(){
+            $('.form').addClass('login-active').removeClass('sign-up-active')
+        });
+        $(document).on('click','.sign-up-btn',function(){
+            $('.form').addClass('sign-up-active').removeClass('login-active')
+        });
+        $(document).on('click','.form-cancel',function(){
+            $('.form').removeClass('login-active').removeClass('sign-up-active')
+        });
+    </script>
+    <!-- bootstarp -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("navigation");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+</body>
+</html>``
